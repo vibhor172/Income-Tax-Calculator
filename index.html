@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+    <style>
+    <div class="se-pre-con"></div>
+
+    .se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
+
+    .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    
+  }
+  
+
+     .parent {
+display: grid;
+grid-template-columns: 2fr 1.3fr 1.66fr 1.7fr;
+grid-template-rows: 4fr 4fr;
+grid-column-gap: 7px;
+grid-row-gap: 5px;
+}
+.h3{ background-color: bisque;
+  color:rgb(0, 0, 0);}
+
+.div1 {  border-radius: 25px;
+  grid-area: 1 / 1 / 2 / 4; background-color: #c8d0fc;
+  color:black;}
+.div2 { color:black; border-radius: 25px; grid-area: 2 / 1 / 4 / 2;  background-color: #c8d0fc;}
+.div3 { color:black; border-radius: 25px; grid-area: 2 / 2 / 4 / 3;  background-color: #c8d0fc;}
+.div4 {  color:black;border-radius: 25px; grid-area: 2 / 3 / 4 / 4;  background-color: #c8d0fc;}
+.div5 {  border-radius: 25px;grid-area: 1 / 4 / 4 / 5;
+background-color: #090020; color:beige }
+
+.div1:hover , .div2:hover , .div3:hover , .div4:hover{background-color: #c2c6f3;
+color:beige}
+
+.grid{
+   text-align:center;
+  
+ 
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 20px 20px;
+  margin: 16px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 40%;
+  background-color: #093dda;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #415eff;
+}
+
+
+    </style>
+  </head>
+  <body style="background-color:rgb(255, 255, 255);">
+    <div class="se-pre-con"></div>
+    <nav class="navbar navbar-dark bg-dark" >
+      <div class="container-fluid"><div class="container">
+
+        <a class="navbar-brand" href="#">
+         
+          <img src="itlogo.png" alt="" width="50" height="40" class="d-inline-block align-text-top">
+          Income Tax Calculator
+        </a>
+       
+      </div></div>
+    </nav>
+    <br>
+    <div class="parent">
+      <div class="div1"><div class="grid"><br><h6>Annual Income</h6><br>
+        
+        <br><br> <label for="salary"></label>
+        <input type="text" id="salary" name="firstname" placeholder="XXXXXXXX"><br><br><br><br><br></div></div>
+      <div class="div2"><div class="grid"> <br><br><h6>Income from Stocks/Bonds/MFs</h4><br><br> <input type="text" id="salary" name="firstname" placeholder="XXXXXXXX"><br><br><br></div></div>
+      <div class="div3"><div class="grid"><br><br><h6> PPF/NPS Contibutions</h6><br><br> <input type="text" id="salary" name="firstname" placeholder="XXXXXXXX"><br><br><br></div></div>
+      <div class="div4"> <div class="grid"><br><br><h6>Re-payment of housing loan</h6><br><br> <input type="text" id="salary" name="firstname" placeholder="XXXXXXXX"><br><br><br></div></div>
+      <div class="div5"><div class="grid"><br><br><img src="itr.png" alt="" width="50" height="40" class="d-inline-block align-text-top"> &nbsp;<b>Income Tax</b><br><br><br> <input type="text" id="salary" name="firstname" placeholder=""><br><br><br><br><br><br>  <input type="submit" value="Calculate"><br><br><br><br><br><br></div></div>
+      </div>
+
+   
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
